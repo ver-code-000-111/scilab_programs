@@ -1,0 +1,20 @@
+clc;
+clear;
+close;
+x=input('enter the sequence ');
+r=xcorr(x,x);
+n=0:3;
+disp('the auto corelation');
+disp(r);
+subplot(2,1,1);
+plot2d3(n,x);
+k=-3:3;
+title('x sequence');
+xlabel('time');
+ylabel('amplitude');
+subplot(2,1,2);
+plot2d3(k,r);
+title('auto corelation');
+xlabel('time');
+ylabel('amplitude');
+
